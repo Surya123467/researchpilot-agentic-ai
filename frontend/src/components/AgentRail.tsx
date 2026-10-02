@@ -1,0 +1,2 @@
+const agents=[['01','PLANNER','Decompose the question'],['02','RESEARCHER','Gather candidate evidence'],['03','MEMORY','Retrieve prior context'],['04','EVIDENCE','Normalize claims'],['05','SYNTHESIZER','Build the research brief'],['06','REVIEWER','Audit before publication']]
+export function AgentRail(){return <section className="agent-rail">{agents.map(([n,name,desc],i)=><div className="agent-node" key={name}><span>{n}</span><div><b>{name}</b><small>{desc}</small></div>{i<agents.length-1&&<i/>}</div>)}</section>}

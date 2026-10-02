@@ -1,0 +1,2 @@
+import {ExternalLink} from 'lucide-react';import type {Source} from '../types'
+export function SourceCard({source}:{source:Source}){return <article className="source-card"><div className="source-top"><span>{source.type}</span><em>{source.credibility}% confidence</em></div><h3>{source.title}</h3><p>{source.snippet}</p><div className="source-foot"><strong>{source.publisher}</strong><a href={source.url} target="_blank" rel="noreferrer">Open source <ExternalLink size={14}/></a></div></article>}
